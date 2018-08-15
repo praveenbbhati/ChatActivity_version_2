@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="header"
+            type="com.users.bktc.user.brahmkumaristrafficcontrol.Utilities.HeaderHandler"/>
+        <variable
+            name="chat"
+            type="com.users.bktc.user.brahmkumaristrafficcontrol.UI.ChatActvity"/>
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent_view"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/header"
+        layout="@layout/headerview_internalscreen"
+        bind:header="@{header}" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lst1"
+        android:divider="@null"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding_10"
+    android:paddingRight="@dimen/margin_10"
+    android:paddingTop="@dimen/padding_5"
+    android:paddingBottom="@dimen/padding_5"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/margin_100"
+        android:background="@drawable/all_corner_round"
+        android:backgroundTint="@color/white"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_10"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:maxLines="5"
+        android:hint="Type here "/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:background="@drawable/send_btn"
+        android:padding="@dimen/text_13"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@drawable/ic_back"
+
+
+            android:id="@+id/fab6"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    </LinearLayout>
+    <!--<android.support.design.widget.FloatingActionButton-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="4"-->
+        <!--android:clickable="true"-->
+        <!--android:id="@+id/fab6"-->
+        <!--app:fabSize="normal"-->
+       <!--android:layout_marginLeft="@dimen/padding_5"-->
+        <!--app:srcCompat="@drawable/send" />-->
+
+</LinearLayout>
+
+
+</layout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="actmain"
+            type="com.users.bktc.user.brahmkumaristrafficcontrol.UI.MainActivity"/>
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/parent_view"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10"
+    android:layout_height="match_parent">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/padding_15"
+    android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/Main_full_hint"
+        android:textSize="@dimen/text_16"
+        android:id="@+id/fullname"
+
+        android:background="@null"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:imeOptions="actionNext"
+        android:maxLength="@integer/first_name_max_length"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_height="wrap_content" /></android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_5"
+        android:background="@color/gray"></View>
+</LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="@string/Main_username_hint"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/user_name"
+
+                android:background="@null"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:imeOptions="actionNext"
+                android:maxLength="@integer/first_name_max_length"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/gray"></View>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="@string/Main_email_hint"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/email"
+
+                android:background="@null"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:imeOptions="actionNext"
+                android:maxLength="@integer/first_name_max_length"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_height="wrap_content" /></android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/gray"></View>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Enter Phone Number"
+                android:textSize="@dimen/text_16"
+                android:id="@+id/pass"
+
+                android:background="@null"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:maxLength="@integer/first_name_max_length"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_height="wrap_content" /></android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/gray"></View>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="@dimen/padding_15"
+        android:layout_width="match_parent"
+        android:text="button"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</layout>

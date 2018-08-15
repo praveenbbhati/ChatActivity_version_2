@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bind="http://schemas.android.com/tools"
+
+    tools:context=".UI.fragments.ChatList">
+    <data>
+        <variable
+            name="header"
+            type="com.users.bktc.user.brahmkumaristrafficcontrol.Utilities.HeaderHandler"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:orientation="vertical"
+        android:id="@+id/parent_view"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/header"
+            layout="@layout/headerview_internalscreen"
+            bind:header="@{header}" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+
+            android:id="@+id/chatlist"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</layout>

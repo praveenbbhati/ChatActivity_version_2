@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Brahm Kumaris Traffic Control</string>
+
+    <string name="sendotp_key">228523ARkDxcHPNx5b5af84b</string>
+    <!--errors -->
+    <string name="internet_check">No Internet Connection!</string>
+    <string name="error_message_time_out">Connection Timed Out</string>
+    <string name="error_message_auth_fail">Authentication Failed</string>
+    <string name="error_message_server_error">Internal Server Error</string>
+    <string name="error_message_network_error">Network Error Check if Internet is working</string>
+    <string name="error_message_parse_error">Error in data parsing</string>
+    <string name="no_response">No Response From Server</string>
+    <string name="please_wait">Please wait.....</string>
+
+    <!--layout strings-->
+    <string name="Main_full_hint">Enter Full Name</string>
+    <string name="Main_username_hint">Enter Username</string>
+    <string name="Main_email_hint">Enter Email Id</string>
+    <string name="Main_pass_hint">Enter Password</string>
+    <string name="Main_conpass_hint">Confirm Password</string>
+    <string name="cancel_">cancel</string>
+</resources>

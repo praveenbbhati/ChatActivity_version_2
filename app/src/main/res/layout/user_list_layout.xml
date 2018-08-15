@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parent_view"
+    android:layout_marginTop="@dimen/padding_10"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginRight="@dimen/margin_10"
+    android:layout_height="wrap_content">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      android:layout_height="wrap_content">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/displayPicture"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@drawable/defaultdp" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/userPhone"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/padding_15"
+                  android:text="Username"
+                  android:textColor="#000000"
+                  android:textStyle="bold" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="right">
+
+                  <TextView
+                      android:id="@+id/lastTimeStamp"
+                      android:layout_width="wrap_content"
+
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/padding_15"
+                      android:text="Last Time Stamp" />
+              </LinearLayout>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/lastMessage"
+                  android:layout_width="wrap_content"
+                  android:maxWidth="@dimen/margin_200"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/padding_15"
+                  android:ellipsize="end"
+                  android:maxLines="1"
+                  android:text="Last Message jasoifdjsgdfjgjoisdjfoigisjdoifjgoisfdoijasoidjfoij" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/padding_15"
+                  android:gravity="right"
+                  android:paddingRight="@dimen/padding_20"
+                  >
+
+                  <TextView
+                      android:id="@+id/NewMessageCount"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/circle"
+                      android:gravity="center"
+                      android:padding="@dimen/padding_5"
+                      android:text="2"
+                      android:visibility="gone"
+                      android:textColor="#ffffff" />
+              </LinearLayout>
+
+          </LinearLayout>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginTop="@dimen/padding_10"
+              android:background="@android:color/darker_gray"/>
+      </LinearLayout>
+
+      </LinearLayout>
+
+
+
+</RelativeLayout>
